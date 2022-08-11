@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        width:90%;
+        margin:0 auto;
+        height:100vh;
+        max-width:1200px;
+    }
+
+    #message-container {
+        border:1px solid black;
+        flex-grow:1;
+        overflow-y:auto;
+    }
+</style>
+<body>
+    <div id="message-container"></div>
+    <form id="form">
+        <div>
+            <label for="message-input">Message</label>
+        <input type="text" id="message-input"/>
+        <button type="submit" id="send-button">Send</button>
+        </div>
+        <div>
+            <label for="message-input">Room</label>
+        <input type="text" id="room-input"/>
+        <button type="button" id="room-button">Join</button>
+        </div>
+        
+    </form>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
